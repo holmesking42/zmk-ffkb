@@ -65,7 +65,7 @@ sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP
       &kp Q &kp W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp BSPC    
     &mt LCMD A &mt LALT R &mt LSHFT S &mt LCTRL T &kp D   &kp H &mt RCTRL N  &mt RSHFT E     &mt RALT I   &mt RCMD O 
     &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp RET 
-                  &kp C_MUTE  &kp DEL   &mo 3   &lt 1 SPACE  &lt 2 SPACE &kp DEL &kp LC(BSPC)
+                  &kp C_MUTE   &kp DEL   &mo 3   &lt 1 SPACE  &lt 2 SPACE &kp DEL &kp LC(BSPC)
 
                         >;
 
