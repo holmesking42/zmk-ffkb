@@ -30,6 +30,28 @@
     acceleration-exponent=<1>;
 };
 
+/ {
+        behaviors {
+            as: auto_shift {
+                compatible = "zmk,behavior-hold-tap";
+                label = "AUTO_SHIFT";
+                #binding-cells = <2>;
+                tapping_term_ms = <150>;
+                quick_tap_ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
+	    tog_mo: behavior_mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "mo_tog";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&tog>, <&mo>;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
