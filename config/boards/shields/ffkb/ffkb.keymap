@@ -117,7 +117,7 @@ label = "lmnt79";
     		&kp Q 		&kp W 		&kp F 		&kp P 		&kp G   		&kp J 		&kp L  		&kp U		&kp Y 		&kp BSPC    
     		&mt LCMD A 	&mt LALT R 	&mt LSHFT S &mt LCTRL T &kp D   		&kp H 		&mt RCTRL N  &mt RSHFT E     &mt RALT I   &mt RCMD O 
     		&kp Z 		&kp X 		&kp C 		&kp V 		&kp B   		&kp K 		&kp M  		&kp COMMA 	&kp DOT 	&kp RET 
-               						&kp C_AC_COPY   &mo 3   	&lt 1 SPACE  	&lt 2 SPACE &kp DEL  	&kp C_AC_PASTE
+               						&copy_text   &mo 3   	&lt 1 SPACE  	&lt 2 SPACE &kp DEL  	&paste_text
             >;
         };
 
