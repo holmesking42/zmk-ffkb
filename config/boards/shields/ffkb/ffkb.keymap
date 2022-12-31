@@ -126,7 +126,7 @@ label = "Num";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
             
             bindings = <
-    		&kp F1   	&kp F2    	&kp F3    	&kp F4    	&kp F5      	&trans  	&kp N7  	&kp N8 		&kp N9 		&kp SEMI 	
+    		&kp F1   	&kp F2     	&kp F3    	&kp F4    	&kp F5      	&trans  	&kp N7  	&kp N8 		&kp N9 		&kp SEMI 	
        		&kp F6    	&kp F7     	&kp F8      &kp F9      &kp F10 		&trans 		&kp N4		&kp N5		&kp N6		&kp SQT 	
      		&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_CLR         	&kp N0		&kp N1		&kp N2		&kp N3		&kp FSLH			 
                           			&trans    &bootloader   &trans          &kp N0  	&kp DOT   	&trans
