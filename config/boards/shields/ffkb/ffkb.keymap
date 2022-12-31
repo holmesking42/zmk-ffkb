@@ -78,7 +78,8 @@
             bindings = <&tog>, <&mo>;
         };
     };
-    keymap {
+    
+   keymap {
         compatible = "zmk,keymap";
 
         default_layer {
@@ -130,6 +131,45 @@
     &trans     &kp LS(HOME) &kp LS(LEFT)  &kp LS(DOWN) &kp LS(RIGHT) &kp LS(END)                                 &kp K_VOL_UP     &kp F4       &kp F5        &kp F6      &kp F11     &trans
     &trans     &trans       &trans        &trans       &trans        &kp C_MUTE                                  &kp K_VOL_DN     &kp F1       &kp F2        &kp F3      &kp F12     &trans
                                           &trans       &trans        &trans        &trans         &trans         &trans           &kp SPACE    &trans
+            >;
+        };
+
+        media_layer {
+            label = "Media";
+            
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            
+            bindings = <
+    &rgb_ug RGB_COLOR_HSB(0,0,100)         &rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF &trans            &trans                            &trans             &bt BT_PRV        &bt BT_NXT         &trans         &trans          &trans
+    &rgb_ug RGB_COLOR_HSB(224,100,100)     &trans           &rgb_ug RGB_HUI  &rgb_ug RGB_SAI &rgb_ug RGB_BRI   &rgb_ug RGB_SPI                   &bt BT_CLR         &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2   &bt BT_SEL 3    &trans
+    &rgb_ug RGB_COLOR_HSB(278,100,100)     &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD &rgb_ug RGB_BRD   &rgb_ug RGB_SPD                   &ext_power EP_TOG  &ext_power EP_ON  &ext_power EP_OFF  &out OUT_USB   &out OUT_BLE    &trans
+                                                                            &trans          &trans            &trans        &trans         &trans         &trans           &trans     &trans
+            >;
+        };
+
+        mouse_layer {
+            label = "Mouse";
+            
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP &inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            
+            bindings = <
+    &trans     &bootloader &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans      &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans      &trans      &trans      &trans      &trans                                           &trans      &trans      &trans      &trans      &trans      &trans
+                                         &trans      &trans        &trans        &trans         &trans          &trans      &trans      &trans
+            >;
+        };
+
+        winnav_layer {
+            label = "Win Navigation";
+            
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            
+            bindings = <
+    &trans     &trans       &trans       &kp LG(UP)   &trans        &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans       &kp LG(LEFT) &kp LG(DOWN) &kp LG(RIGHT) &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
+    &trans     &trans       &trans       &trans       &trans        &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
+                                         &trans       &trans        &trans        &trans         &trans         &trans        &trans       &trans
             >;
         };
     };
