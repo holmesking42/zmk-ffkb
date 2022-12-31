@@ -32,38 +32,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_undo {
-            timeout-ms = <50>;
-            key-positions = <25 26>;
-            bindings = <&kp LC(Z)>;
-        };
-        combo_q {
-            timeout-ms = <50>;
-            key-positions = <26 27>;
-            bindings = <&kp Q>;
-        };
-        combo_semicolon {
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&kp SEMI>;
-        };
-    };
-};
-
-/ {
     macros {
-        copy_text: copy_text {
-            label = "COPY";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCMD>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCMD>
-                ;
-        };
 	paste_text: paste_text {
             label = "COPY";
             compatible = "zmk,behavior-macro";
@@ -71,6 +40,16 @@
             bindings
                 = <&macro_press &kp LCMD>
                 , <&macro_tap &kp V>
+                , <&macro_release &kp LCMD>
+                ;
+        };
+	copy_text: copy_text {
+            label = "COPY";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD>
+                , <&macro_tap &kp C>
                 , <&macro_release &kp LCMD>
                 ;
         };
