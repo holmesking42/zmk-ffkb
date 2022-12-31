@@ -11,7 +11,7 @@
 #define FUNC    3
 #define MEDIA   4
 #define MOUSE   5
-#define WINNAV  6
+
 
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
@@ -147,17 +147,6 @@
             >;
         };
 
-        winnav_layer {
-            label = "Win Navigation";
-            
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
-            
-            bindings = <
-    &trans     &trans       &trans       &kp LG(UP)   &trans        &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans       &kp LG(LEFT) &kp LG(DOWN) &kp LG(RIGHT) &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
-    &trans     &trans       &trans       &trans       &trans        &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
-                                         &trans       &trans        &trans        &trans         &trans         &trans        &trans       &trans
-            >;
-        };
+       
     };
 };
