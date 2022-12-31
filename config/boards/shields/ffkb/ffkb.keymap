@@ -53,6 +53,31 @@
 };
 
 / {
+    macros {
+        copy_text: copy_text {
+            label = "COPY";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD>
+                , <&macro_tap &kp C>
+                , <&macro_release &kp LCMD>
+                ;
+        };
+	paste_text: paste_text {
+            label = "COPY";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD>
+                , <&macro_tap &kp V>
+                , <&macro_release &kp LCMD>
+                ;
+        };
+    };
+};
+
+/ {
 
     sensors {
         compatible = "zmk,keymap-sensors";
