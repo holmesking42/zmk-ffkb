@@ -33,8 +33,8 @@
 
 / {
     macros {
-	paste_text: paste_text {
-            label = "COPY";
+	paste:paste {
+            label = "PASTE";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -43,7 +43,7 @@
                 , <&macro_release &kp LCMD>
                 ;
         };
-	copy_text: copy_text {
+	copy: copy {
             label = "COPY";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -96,7 +96,7 @@ label = "lmnt79";
     		&kp Q 		&kp W 		&kp F 		&kp P 		&kp G   		&kp J 		&kp L  		&kp U		&kp Y 		&kp BSPC    
     		&mt LCMD A 	&mt LALT R 	&mt LSHFT S &mt LCTRL T &kp D   		&kp H 		&mt RCTRL N  &mt RSHFT E     &mt RALT I   &mt RCMD O 
     		&kp Z 		&kp X 		&kp C 		&kp V 		&kp B   		&kp K 		&kp M  		&kp COMMA 	&kp DOT 	&kp RET 
-               						&copy_text   &mo 3   	&lt 1 SPACE  	&lt 2 SPACE &kp DEL  	&paste_text
+               						&copy   &mo 3   	&lt 1 SPACE  	&lt 2 SPACE &kp DEL  	&paste
             >;
         };
 
