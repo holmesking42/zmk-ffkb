@@ -24,11 +24,11 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <60>;
+    time-to-max-speed-ms = <100>;
 };
 
 &mwh {
-    acceleration-exponent=<1>;
+    acceleration-exponent=<2>;
 };
 
 / {
