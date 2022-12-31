@@ -63,6 +63,16 @@
                 , <&macro_release &kp LCMD>
                 ;
         };
+	search: search {
+            label = "QUIT";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LCMD>
+                ;
+        };
     };
 };
 
